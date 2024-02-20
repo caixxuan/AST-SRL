@@ -9,6 +9,8 @@ We introduce an evolving series reinforcement learning (RL) framework for advers
 
 Code is available in the \src folder which is **COMING SOONING!** which follows the **INTERFUSER** framework!
 
+Please refer to the **INTERFUSER** (https://github.com/opendilab/InterFuser) to install the AST-SRL.
+
 # Usage
 
 ![sketch_all](https://github.com/caixxuan/AST-SRL/assets/110223255/841ac373-1693-4b1a-825c-d80bedca2a2b)
