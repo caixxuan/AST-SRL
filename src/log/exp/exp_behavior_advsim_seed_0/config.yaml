@@ -1,0 +1,37 @@
+scenario_type_dir: safebench/scenario/config/scenario_type
+scenario_type: advsim.json
+scenario_category: planning
+policy_type: advsim
+route_dir: safebench/scenario/scenario_data/route
+scenario_id: null
+route_id: null
+ego_action_dim: 2
+ego_state_dim: 4
+ego_action_limit: 1.0
+model_path: safebench/scenario/scenario_data/model_ckpt/advsim
+save_freq: 10
+buffer_capacity: 10000
+eval_in_train_freq: 10
+train_episode: 2000
+exp_name: exp
+output_dir: log
+ROOT_DIR: /home/oem/SafeBench/SafeBench_CaiXuan
+max_episode_step: 300
+auto_ego: false
+mode: train_scenario
+agent_cfg:
+- behavior.yaml
+scenario_cfg:
+- advsim.yaml
+continue_agent_training: false
+continue_scenario_training: false
+seed: 0
+threads: 4
+device: cuda:0
+num_scenario: 1
+save_video: false
+render: true
+frame_skip: 1
+port: 2000
+tm_port: 8000
+fixed_delta_seconds: 0.1

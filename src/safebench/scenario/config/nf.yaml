@@ -1,0 +1,33 @@
+scenario_type_dir: 'safebench/scenario/config/scenario_type'
+scenario_type: 'adv_init_state.json'
+scenario_category: 'planning'
+policy_type: 'nf'
+
+route_dir: 'safebench/scenario/scenario_data/route'
+scenario_id: 2
+route_id: null
+
+ego_action_dim: 2
+ego_state_dim: 4
+ego_action_limit: 1.0
+
+# for NF policy model
+model_path: 'safebench/scenario/scenario_data/model_ckpt/nf'
+model_id: 1
+use_prior: False
+buffer_capacity: 100
+batch_size: 4
+lr: 0.1
+prior_lr: 0.05
+prior_epochs: 0
+alpha: 0.5
+itr_per_train: 100
+state_dim: 63
+action_dim: 4
+reward_dim: 4 #没用？
+drop_threshold: 0.1 #没用？
+n_flows_model: 4
+eval_in_train_freq: 10
+save_freq: 10
+train_episode: 1000
+

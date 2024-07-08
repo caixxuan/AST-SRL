@@ -1,0 +1,47 @@
+scenario_type_dir: 'safebench/scenario/config/scenario_type'
+scenario_type: 'adv_behavior_single.json'
+scenario_category: 'planning'
+policy_type: 'td3'
+
+route_dir: 'safebench/scenario/scenario_data/route'
+scenario_id: 8
+route_id: null
+
+# parameters for agent policy
+ego_action_dim: 2
+ego_state_dim: 4
+ego_action_limit: 1.0
+
+# parameters for scenario policy
+# for scenario id 1
+#scenario_state_dim: 27 # 3*9 - actor number * actor info dim
+#scenario_action_dim: 1
+
+# for scenario id 8
+scenario_state_dim: 18 # 2*9 - actor number * actor info dim
+scenario_action_dim: 1
+
+# for TD3 policy model
+model_path: 'safebench/scenario/scenario_data/model_ckpt/td3'
+model_id: 1
+
+
+train_episode: 2000
+eval_in_train_freq: 1
+save_freq: 10
+buffer_capacity: 10000
+buffer_start_training: 100
+
+hidden_size: 256
+
+lr: 3.0e-4
+tau: 0.005
+update_iteration: 3
+gamma: 0.99
+batch_size: 32
+update_interval: 2
+action_lim: 1
+target_noise: 0.2
+target_noise_clip: 0.5
+explore_noise: 0.1
+
