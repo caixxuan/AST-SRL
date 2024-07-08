@@ -60,6 +60,7 @@ bash docker/run_docker.sh
 ```
 
 The CARLA simulator is installed at `/home/AST/carla` and SafeBench is installed at `/home/AST/SafeBench`.
+</details>
 
 # Usage
 
