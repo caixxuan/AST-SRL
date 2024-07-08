@@ -5,7 +5,7 @@ We introduce an evolving series reinforcement learning (RL) framework for advers
 
 ![overall framework](https://github.com/caixxuan/AST-SRL/assets/110223255/0786ef51-60b3-4f4b-8c5c-4b6110a7e9a1)
 
-# Installation (COMMING SOON!)
+# Installation
 
 
 For ease of use, we have integrated AST into the **SAFEBENCH** framework! 
