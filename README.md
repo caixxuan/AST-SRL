@@ -177,10 +177,10 @@ DISPLAY=:8 python scripts/run.py --agent_cfg sac.yaml --scenario_cfg scenic.yaml
 ``` 
 </details>
 
-# COMMING SOON
+### COMMING SOON
 The AST method and safebench have certain framework differences, and due to their reward shaping and detailed operations, the complete version of AST will be released within 2 weeks!
 
-## Running Arguments
+### Running Arguments
 
 | Argument | Choice | Usage |
 | :----: | :----: | :---- |
@@ -193,10 +193,10 @@ The AST method and safebench have certain framework differences, and due to thei
 | `auto_ego`      | store_true     |  Overwrite the action of ego agent with auto-polit |
 | `port`      | int     |  Port used by Carla, default 2000 |
 
-# Cite
+### Cite
 
 
-# Refercence
+### Refercence
 Results is illustrated in the \res folder.
 
 We employ the Python API interface of Carla to compile all programs relevant to the series RL.
