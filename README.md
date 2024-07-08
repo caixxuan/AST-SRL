@@ -76,7 +76,7 @@ Enter the CARLA root folder, launch the CARLA server and run our platform with
 ./CarlaUE4.sh -prefernvidia -windowed -carla-port=2000
 
 # Launch SafeBench in another terminal
-python scripts/run.py --agent_cfg basic.yaml --scenario_cfg standard.yaml --mode eval
+python scripts/run.py --agent_cfg behavior.yaml --scenario_cfg td3.yaml --mode eval
 ```
 </details>
 
@@ -161,13 +161,13 @@ For selecting the most adversarial scenes, the param ```sample_num``` within the
 
 
 ```bash
-python scripts/run.py --agent_cfg sac.yaml --scenario_cfg TD3.yaml --num_scenario 1 --mode train_scenario
+python scripts/run.py --agent_cfg sac.yaml --scenario_cfg scenic.yaml --num_scenario 1 --mode train_scenario
 ```
 
 Now you can test the ego with these selected adversarial scenes:
 
 ```bash
-python scripts/run.py --agent_cfg sac.yaml --scenario_cfg TD3.yaml --num_scenario 1 --mode eval
+python scripts/run.py --agent_cfg sac.yaml --scenario_cfg scenic.yaml --num_scenario 1 --mode eval
 ```
 
 Or if you want to Launch it on the virtual display:
@@ -194,8 +194,6 @@ The AST method and safebench have certain framework differences, and due to thei
 | `auto_ego`      | store_true     |  Overwrite the action of ego agent with auto-polit |
 | `port`      | int     |  Port used by Carla, default 2000 |
 
-### Cite
-
 
 ### Refercence
 Results is illustrated in the \res folder.
@@ -209,3 +207,13 @@ We employ the Python API interface of Carla to compile all programs relevant to 
 *Carla-Leaderboard is available at https://leaderboard.carla.org/leaderboard/
 
 
+### Cite
+
+```bibtex
+@article{cai2024adversarial,
+title={Adversarial Stress Test for Autonomous Vehicle Via Series Reinforcement Learning Tasks With Reward Shaping},
+author={Cai, Xuan and Bai, Xuesong and Cui, Zhiyong and Hang, Peng and Yu, Haiyang and Ren, Yilong},
+journal={IEEE Transactions on Intelligent Vehicles},
+year={2024},
+publisher={IEEE}
+}
